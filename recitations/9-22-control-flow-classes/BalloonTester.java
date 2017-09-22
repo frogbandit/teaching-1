@@ -8,10 +8,12 @@ public class BalloonTester
 {
 	public static void main(String[] args)
 	{
-		Balloon b = new Balloon(100);
+		Balloon b = new Balloon(100, "blue");
 		b.addAir(100);
 		System.out.println("Volume: " + b.getVolume());
-		System.out.println("Surface Area: " + b.getSurfaceArea());
+		b.multiplyVolumeByFive();
+		System.out.println("Volume: " + b.getVolume());
 		System.out.println("Radius: " + b.getRadius());
+		System.out.println("Surface Area: " + b.getSurfaceArea());
 	}
 }
